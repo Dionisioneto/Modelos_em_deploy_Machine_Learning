@@ -86,7 +86,7 @@ st.write(accuracy_score(y_test, y_pred)*100)
 
 ## Previsão
 
-prediction = clf.predict(np.array(user_input_variables).reshape(1,-1))
+prediction = clf.predict(user_input_variables)
 
 st.subheader("Previsão")
 st.write(prediction)
